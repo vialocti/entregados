@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react'
-import {View, Text, Button, StyleSheet, Keyboard, TouchableOpacity} from 'react-native'
+import {View, Text, Button, StyleSheet,Alert , TouchableOpacity} from 'react-native'
 import { colors } from '../utils/constants/colors'
 import Card from '../components/card'
 import Header from '../components/header'
@@ -26,14 +26,22 @@ const GameInProcess = ({positionGenerada,onExit,onGameOver}) => {
    const verificarResu =()=>{
      setElegidosPos(prevE =>[...prevE, 0])
      setIntentos((prev)=> prev+1)
-    
+      
       if(posicion==positionElegida){
 
           onGameOver(true,true)
+        } else{ 
+          positionElegida>0?Alert.alert(`En la posicion ${positionElegida}, No esta Escondida`):null
         }
-     if(intentos>2){setFinJuego(true)}
+     if(intentos>2){
+    
+      setFinJuego(true)
+    }
      
-     if(finjuego){onGameOver(true,false)}
+     if(finjuego){
+    
+      onGameOver(true,false)
+    }
      
     }
     

@@ -30,7 +30,7 @@ const StartGameScreen = ({onStarGame})=>{
                         El objetivo del Juego es adivinar detras de que casilla
                         se encuentra la letra A, se muestra una matriz de 3 filas y 3 columnas
                         numeradas del 1 al 9, y tiene 3 intentos para acertar donde esta.
-                        SUERTE!!!
+                        La eleccion es pulsando sobre la casilla, SUERTE!!!
                     </Text>
                 </View>
                 <View style={styles.botoncontainer}>
