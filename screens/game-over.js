@@ -15,7 +15,7 @@ const GameOverScreen = ({ acierto, posicion ,onRestartGame }) => {
             
             <Image source={{ uri: 'https://img.freepik.com/vector-gratis/juego-terminado-efecto-falla_225004-661.jpg?w=2000'}} style={styles.image} />          
                 
-                <Text style={styles.textResult}>La Ubicacion era la :{posicion}</Text>
+                <Text style={styles.textResult}>La Ubicacion era :{posicion}</Text>
             
             <Button 
                onReset title="Reiniciar"
