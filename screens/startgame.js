@@ -19,9 +19,7 @@ const StartGameScreen = ({onStarGame})=>{
 
     return(
         <View style={styles.containerscreen}>
-          <View style={styles.cabecera}>
-             <Text style={styles.gametitle}>Donde esta Escondida</Text>
-           </View>
+          
 
             <Header title="Inicio del Juego" />
             
@@ -61,15 +59,7 @@ const styles = StyleSheet.create({
         
 
     },
-    cabecera:{
-        marginTop:30,
-        height:'15%',
-        backgroundColor:'#000000',
-        justifyContent:'center',
-        alignItems:'center',
-        padding: 15,
-        width: '90%',
-    },
+    
     gametitle:{
         fontSize:24,
         color: colors.gray,
